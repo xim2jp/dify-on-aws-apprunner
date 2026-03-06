@@ -1,0 +1,26 @@
+project        = "dify"
+environment    = "development"
+aws_region     = "ap-northeast-1"
+aws_account_id = "123456789012"  # ← あなたの AWS アカウント ID
+
+# VPC
+vpc_cidr          = "10.0.0.0/16"
+nat_gateway_count = 1
+
+# RDS
+rds_instance_class    = "db.t4g.micro"
+rds_allocated_storage = 20
+rds_multi_az          = false
+
+# ElastiCache
+redis_node_type          = "cache.t4g.micro"
+redis_num_cache_clusters = 1
+
+# S3
+s3_versioning = false
+
+# App Runner
+apprunner_cpu           = "1024"
+apprunner_memory        = "2048"
+apprunner_min_instances = 1
+apprunner_max_instances = 2
