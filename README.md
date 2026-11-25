@@ -2,6 +2,8 @@
 
 Dify 1.13.0 を AWS App Runner にデプロイする Terraform + Docker 構成一式です。
 
+> **AWS App Runner の利用条件:** AWS App Runner は 2026年4月30日に新規利用の受付を終了しました。既存の利用者は、新しいサービスの作成も含めて引き続き利用できます。App Runner を利用できない AWS アカウントでは、この README の手順や Terraform コードをそのまま使って構築できません。AWS は新規利用者に Amazon ECS Express Mode を案内していますが、このリポジトリの構成では未検証です。[AWS 公式案内](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/modern-apps-strategy-on-aws-how-to-choose.html)
+
 ## アーキテクチャ
 
 ```
